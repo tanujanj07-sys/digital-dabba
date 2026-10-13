@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DigitalDabba – Smart Tiffin Ordering & Delivery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-content">
+      <h1>DigitalDabba</h1>
+      <p class="tagline">Smart Tiffin Ordering & Delivery System</p>
+      <nav class="main-nav">
+        <a href="#plans">Plans</a>
+        <a href="#orders">My Orders</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <h2>Home-cooked meals, delivered on time</h2>
+      <p>Choose a tiffin plan, subscribe or order for today, and track your delivery in real time.</p>
+      <a href="#plans" class="cta-button">View Tiffin Plans</a>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="section">
+      <h2>Tiffin Plans</h2>
+      <div id="plansContainer" class="plans-grid"></div>
+    </section>
+
+    <!-- Cart / Checkout -->
+    <section id="cart" class="section">
+      <h2>Your Cart</h2>
+      <div id="cartContainer">
+        <p>Your cart is empty. Add a plan to get started.</p>
+      </div>
+      <div class="checkout-box" id="checkoutBox" style="display:none;">
+        <h3>Checkout</h3>
+        <form id="checkoutForm">
+          <div class="form-row">
+            <input type="text" id="customerName" placeholder="Full Name" required />
+            <input type="text" id="customerPhone" placeholder="Phone Number" required />
+          </div>
+          <div class="form-row">
+            <input type="email" id="customerEmail" placeholder="Email" required />
+            <input type="text" id="deliveryAddress" placeholder="Full Delivery Address" required />
+          </div>
+          <div class="form-row">
+            <select id="planType" required>
+              <option value="">Select Plan Type</option>
+              <option value="daily">Daily (Pay per day)</option>
+              <option value="weekly">Weekly (5 days)</option>
+              <option value="monthly">Monthly (22 days)</option>
+            </select>
+            <input type="date" id="startDate" required />
+          </div>
+          <button type="submit" class="primary-button">Place Order</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Orders / Tracking -->
+    <section id="orders" class="section">
+      <h2>My Orders</h2>
+      <div id="ordersContainer">
+        <p>No orders yet. Your placed orders will appear here.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <h2>About DigitalDabba</h2>
+      <p>
+        DigitalDabba connects local tiffin providers with students, professionals, and families who want
+        healthy, home-style meals. Our goal is to make tiffin ordering simple, transparent, and reliable.
+      </p>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>&copy; 2026 DigitalDabba. Built as a student project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
